@@ -23,7 +23,12 @@ class Calculator {
 
     appendNumber(number) {
         /* add number to screen when number clicked */
-        this.currentOperand = number;
+
+        /* only allow one period to be inputed per string */
+        if(number === '.' && this.currentOperand.includes('.')) return;
+
+        /* conver to string because want to concatenate, not add */
+        this.currentOperand = this.currentOperand.toString() + number.toString();
     }
 
     chooseOperation(operation) {
