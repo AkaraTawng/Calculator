@@ -123,4 +123,9 @@ equalsButton.addEventListener('click', button => {
 });
 
 
+allClearButton.addEventListener('click', button => {
+    calculator.clear();
+    calculator.updateDisplay();
+});
+
 
