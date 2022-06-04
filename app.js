@@ -18,7 +18,7 @@ class Calculator {
 
     delete() {
         /* remove a single number */
-
+        this.currentOperand = this.currentOperand.toString().slice(0, -1);
     }
 
     appendNumber(number) {
@@ -128,4 +128,9 @@ allClearButton.addEventListener('click', button => {
     calculator.updateDisplay();
 });
 
+
+deleteButton.addEventListener('click', button => {
+    calculator.delete();
+    calculator.updateDisplay();
+});
 
