@@ -24,7 +24,7 @@ class Calculator {
     appendNumber(number) {
         /* add number to screen when number clicked */
 
-        /* only allow one period to be inputed per string */
+        /* only allow one period to be inputed per */
         if(number === '.' && this.currentOperand.includes('.')) return;
 
         /* conver to string because want to concatenate, not add */
@@ -33,6 +33,22 @@ class Calculator {
 
     chooseOperation(operation) {
         /* execute calculation based on chosen operation */
+
+        /* if current operand is empty, exit code */
+        if(this.currentOperand === '') return;
+
+        /* if previos operand div already has number stored in it, do computation between current and previous operands then update previous operands with new value */
+        if(this.previousOperand !== ''){
+            this.compute();
+        }
+
+        this.operation = operation;
+
+        /* puts current operand into previous operand div */
+        this.previousOperand = this.currentOperand;
+
+        /* clears current operand div */
+        this.currentOperand = '';
     }
 
     compute() {
@@ -42,6 +58,8 @@ class Calculator {
     updateDisplay() {
         /* update values inside of output */
         this.currentOperandTextElement.innerText = this.currentOperand;
+
+        this.previousOperandTextElement.innerText = this.previousOperand;
     }
 };
 
@@ -61,6 +79,14 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
+        calculator.updateDisplay();
+    })
+})
+
+
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
         calculator.updateDisplay();
     })
 })
