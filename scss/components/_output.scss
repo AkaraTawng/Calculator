@@ -1,0 +1,23 @@
+
+    #output {
+        background-color: #343a40;
+        grid-area: ou;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        word-wrap: break-word;
+        word-break: break-all;
+        padding-right: 1.5%;
+    };
+
+    .previous-operand {
+        color: rgb(212, 212, 212);
+        font-size: 1.5rem;
+
+    }
+
+    .current-operand {
+        color: #fff;
+        font-size: 2.5rem;
+    }

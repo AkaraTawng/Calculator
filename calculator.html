@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="scss/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-container">
+                <li class="nav-itm home">HOME</li>
+                <li class="nav-itm about">ABOUT</li>
+                <li class="nav-itm help">HELP</li>
+                <h1 id="title">Calculator</h1>
+                <li class="nav-itm social" ><a class="social-link" href="https://github.com/AkaraTawng" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a></li>
+                <li class="nav-itm social"><a href="https://twitter.com/home" class="social-link" target="_blank"><i class="fa-brands fa-twitter-square fa-3x"></i></a></li>
+                <li class="nav-itm social"><a href="https://www.linkedin.com/in/christopher-chamberlain-023507205/"  class="social-link" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <!-- <input id="screen" type="number" placeholder="0"/> -->
+            <div id="output">
+                <div class="previous-operand" data-previous-operand>123</div>
+                <div class="current-operand" data-current-operand>45</div>
+            </div>
+            <button class="btn red-hover" data-all-clear   id="clear">AC</button>
+            <button class="btn green-hover" data-operation id="divide">&divide;</button>
+            <button class="btn green-hover" data-operation id="multiply">&times;</button>
+            <button class="btn red-hover" data-delete id="delete">DEL</button>
+
+
+            
+            <button class="btn" data-number id="seven">7</button>
+            <button class="btn" data-number id="eight">8</button>
+            <button class="btn" data-number id="nine">9</button>
+            <button class="btn green-hover" data-operation id="minus">&minus;</button>
+            
+            <button class="btn" data-number id="four">4</button>
+            <button class="btn" data-number id="five">5</button>
+            <button class="btn" data-number id="six">6</button>
+            <button class="btn green-hover" data-operation id="plus">&plus;</button>
+
+            <button class="btn" data-number id="one">1</button>
+            <button class="btn" data-number id="two">2</button>
+            <button class="btn" data-number id="three">3</button>
+            
+            <button class="btn" data-number id="zero">0</button>
+            <button class="btn" data-number id="decimal">.</button>
+            <button class="btn green-hover" data-equals id="equals">&equals;</button>
+        </div>
+    </main>
+
+    <section id="buttons">
+        <div class="btn-flex-container" >
+            <button>Theme</button>
+            <button>Destroy Math</button>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+<script src="https://kit.fontawesome.com/13d559bf8d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

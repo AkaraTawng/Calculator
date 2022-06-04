@@ -1,0 +1,156 @@
+@import '../utilities/colors';
+
+#buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+.btn-flex-container{
+    display: flex;
+    flex-direction: column;
+    // background-color: antiquewhite;
+    // border: solid black 1px;
+    height: 50vh;
+    justify-content: space-around;
+    margin: -40% auto 0 5%; 
+}
+
+.grid-container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 60%;
+    height: 29rem;
+    border: solid rgb(199, 199, 199) 15px;
+    background-color: rgb(199, 199, 199);
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "ou ou ou ou"
+        "ac del di mu" 
+       " se ei ni mi"
+       " fo fi si pl"
+        "on tw th eq"
+        "ze ze de eq"
+    ;
+
+    
+
+    .btn {
+    
+        border: none;
+        font-size: 1.7rem;
+        background-color: white;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: $numberBtnGrey; //make variable
+        }
+
+        &.green-hover:hover {
+            background-color: $operatorBtnGreen; //make variable
+        }
+
+        &.red-hover:hover { 
+            background-color: $clearButtonRed ; //make variable
+        }
+       
+    }
+
+    
+    
+
+    #output {
+        grid-area: ou;
+    }
+    
+
+    #clear {
+        // background-color: #a0c4ff;
+        grid-area: ac;
+    };
+
+    #divide {
+        grid-area: di;
+    
+    }
+    
+    #multiply {
+        grid-area: mu;
+    
+    }
+
+    #delete {
+        grid-area: del;
+    }
+    
+    #seven {
+        grid-area: se;
+    
+    }
+    
+    #eight {
+        grid-area: ei;
+    
+    }
+    
+    #nine {
+        grid-area: ni;
+    
+    }
+    
+    #minus {
+        grid-area: mi;
+    
+    }
+    
+    #four {
+        grid-area: fo;    
+    }
+    
+    #five {
+        grid-area: fi;
+    
+    }
+    
+    #six {
+        grid-area: si;
+    
+    }
+    
+    #plus {
+        grid-area: pl;
+    
+    }
+    
+    
+    #one {
+        grid-area: on;
+    
+    }
+    
+    #two {
+        grid-area: tw;
+    
+    }
+    
+    #three {
+        grid-area: th;    
+    
+    }
+    
+    #zero {
+        grid-area: ze;
+    
+    }
+    
+    #decimal {
+        grid-area: de;
+
+    }
+    
+    #equals {
+        grid-area: eq;    
+    }
+};

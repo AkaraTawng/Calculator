@@ -1,0 +1,148 @@
+.container {
+  margin: 0 auto;
+  width: 50%;
+  height: 22rem;
+  border: solid black 1px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "sc sc sc sc"
+ "ac ac di mu" 
+ " se ei ni mi"
+ " fo fi si pl"
+ "on tw th eq"
+ "ze ze de eq";
+}
+
+#screen {
+  background-color: #a7c957;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: sc;
+}
+
+#clear {
+  background-color: #a0c4ff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ac;
+}
+
+#divide {
+  background-color: #f7b267;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: di;
+}
+
+#multiply {
+  background-color: #17c3b2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: mu;
+}
+
+#seven {
+  background-color: #bdb2ff;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: se;
+}
+
+#eight {
+  background-color: #72ddf7;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: ei;
+}
+
+#nine {
+  background-color: #ffd670;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: ni;
+}
+
+#minus {
+  background-color: #e6beae;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: mi;
+}
+
+#four {
+  background-color: #e7d8c9;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: fo;
+}
+
+#five {
+  background-color: #95d5b2;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: fi;
+}
+
+#six {
+  background-color: #ee6c4d;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: si;
+}
+
+#plus {
+  background-color: #e2c044;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: pl;
+}
+
+#one {
+  background-color: #a7333f;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: on;
+}
+
+#two {
+  background-color: #a47148;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: tw;
+}
+
+#three {
+  background-color: #f3d5b5;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: th;
+}
+
+#zero {
+  background-color: #d264b6;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ze;
+}
+
+#decimal {
+  background-color: #93a8ac;
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: de;
+}
+
+#equals {
+  background-color: #5f4b66;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: eq;
+}
+/*# sourceMappingURL=main.css.map */

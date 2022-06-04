@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
+#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: -40% auto 0 5%;
+}
+
+.grid-container {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 60%;
+  height: 29rem;
+  border: solid #c7c7c7 15px;
+  background-color: #c7c7c7;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "ou ou ou ou" "ac del di mu"  " se ei ni mi" " fo fi si pl" "on tw th eq" "ze ze de eq";
+}
+
+.grid-container .btn {
+  border: none;
+  font-size: 1.7rem;
+  background-color: white;
+}
+
+.grid-container .btn:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+.grid-container .btn.green-hover:hover {
+  background-color: #90ee90;
+}
+
+.grid-container .btn.red-hover:hover {
+  background-color: #ee6055;
+}
+
+.grid-container #output {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: ou;
+}
+
+.grid-container #clear {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ac;
+}
+
+.grid-container #divide {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: di;
+}
+
+.grid-container #multiply {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: mu;
+}
+
+.grid-container #delete {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: del;
+}
+
+.grid-container #seven {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: se;
+}
+
+.grid-container #eight {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: ei;
+}
+
+.grid-container #nine {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: ni;
+}
+
+.grid-container #minus {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: mi;
+}
+
+.grid-container #four {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: fo;
+}
+
+.grid-container #five {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: fi;
+}
+
+.grid-container #six {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: si;
+}
+
+.grid-container #plus {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: pl;
+}
+
+.grid-container #one {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: on;
+}
+
+.grid-container #two {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: tw;
+}
+
+.grid-container #three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: th;
+}
+
+.grid-container #zero {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ze;
+}
+
+.grid-container #decimal {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: de;
+}
+
+.grid-container #equals {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: eq;
+}
+
+.nav-container {
+  border-bottom: solid 2px black;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.nav-container h1 {
+  margin: 0px 26% 0 7%;
+  font-size: 2.4rem;
+  font-family: "Cairo", sans-serif;
+}
+
+.nav-container .nav-itm {
+  list-style-type: none;
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 15px;
+}
+
+.nav-container .nav-itm:hover {
+  cursor: pointer;
+}
+
+.nav-container .help {
+  margin-right: auto;
+}
+
+.nav-container .social {
+  border: none;
+  padding: 0;
+  color: black;
+}
+
+.nav-container .social .social-link {
+  cursor: crosshair;
+  color: black;
+}
+
+.nav-container .social .social-link :hover {
+  -webkit-transform: rotate(10deg) scale(1.1);
+          transform: rotate(10deg) scale(1.1);
+  color: black;
+}
+
+.nav-container .social .social-link :visited {
+  text-decoration: none;
+  color: black;
+}
+
+#output {
+  background-color: #343a40;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: ou;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-right: 1.5%;
+}
+
+.previous-operand {
+  color: #d4d4d4;
+  font-size: 1.5rem;
+}
+
+.current-operand {
+  color: #fff;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */
