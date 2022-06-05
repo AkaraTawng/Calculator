@@ -18,6 +18,8 @@ class Calculator {
 
     delete() {
         /* remove a single number */
+
+        /* converts operand to string in order to slice. Go from index 0 to second to last and store in currentOperand variable  */
         this.currentOperand = this.currentOperand.toString().slice(0, -1);
     }
 
@@ -66,7 +68,7 @@ class Calculator {
             case '-':
                 computation = prev - current;
                 break;
-            case '*':
+            case 'x':
                 computation = prev * current;
                 break;
             case '/':
@@ -80,11 +82,45 @@ class Calculator {
         this.previousOperand = '';
     }
 
+    getDisplayNumber(number){
+        /* sets number string variable to split string on decimal place */
+        const stringNumber = number.toString();
+
+        /* turns string number into an array. First number is part before decimal. Second number is after decimal. Stores first number - integer - of array. */
+        const integerDigits = parseFloat(stringNumber.split('.')[0]);
+
+        /* stores numbers after decimal in array */
+        const decimalDigits = stringNumber.split('.')[1];
+        let integerDisplay;
+        
+        /* if user inputs nothing or just decimal */
+        if(isNaN(integerDigits)) {
+            integerDisplay = '';
+        } else {
+            /* only allows 1 decimal */
+            integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits: 0});
+        }
+        
+        /* if there is a decimal and there are decimal digits */
+        if(decimalDigits != null){
+            return `${integerDisplay}.${decimalDigits}`
+        } else {
+            return integerDisplay;
+        }
+    }
+
     updateDisplay() {
         /* update values inside of output */
-        this.currentOperandTextElement.innerText = this.currentOperand;
-
-        this.previousOperandTextElement.innerText = this.previousOperand;
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
+        
+        /* displays operation symbol at end of previous operand */
+        if(this.operation != null){
+            this.previousOperandTextElement.innerText = 
+            `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
+        } else {
+            /* delete previous operand after calculation is completed */
+            this.previousOperandTextElement.innerText = '';
+        }
     }
 };
 
@@ -108,7 +144,7 @@ numberButtons.forEach(button => {
     });
 });
 
-
+/* performs computation based on chosen operation */
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.chooseOperation(button.innerText)
@@ -116,19 +152,19 @@ operationButtons.forEach(button => {
     });
 });
 
-
+/* computes total when = clicked */
 equalsButton.addEventListener('click', button => {
     calculator.compute();
     calculator.updateDisplay();
 });
 
-
+/* clears display when AC clicked */
 allClearButton.addEventListener('click', button => {
     calculator.clear();
     calculator.updateDisplay();
 });
 
-
+/* deletes last digit when DEL clicked */
 deleteButton.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
