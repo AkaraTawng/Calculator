@@ -48,6 +48,7 @@
             :hover{
                 transform: rotate(10deg) scale(1.1);
                 color: black;
+                transition: transform 0.1s linear;
                 
             }
 
