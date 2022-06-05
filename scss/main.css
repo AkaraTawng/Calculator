@@ -226,7 +226,7 @@
 
 .nav-container .social .social-link {
   cursor: crosshair;
-  color: black;
+  color: rgba(0, 0, 0, 0.767);
 }
 
 .nav-container .social .social-link :hover {
@@ -261,6 +261,8 @@
   word-wrap: break-word;
   word-break: break-all;
   padding-right: 1.5%;
+  height: 8rem;
+  margin-bottom: -30px;
 }
 
 .previous-operand {
