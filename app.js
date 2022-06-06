@@ -170,3 +170,5 @@ deleteButton.addEventListener('click', button => {
     calculator.updateDisplay();
 });
 
+
+/* Theme Toggle Button */
