@@ -280,10 +280,6 @@
   position: absolute;
 }
 
-.checkbox :checked {
-  background-color: antiquewhite;
-}
-
 .label {
   background-image: linear-gradient(129.1deg, #f3c753 26.8%, #12ebcf 114.1%);
   -webkit-box-pack: justify;
