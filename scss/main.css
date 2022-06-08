@@ -214,11 +214,36 @@
   cursor: pointer;
 }
 
+.nav-container .internal {
+  position: relative;
+  padding-bottom: 0.5%;
+  font-size: 1.2rem;
+}
+
+.nav-container .internal::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
+  background-image: linear-gradient(to right, white, #003cff);
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
 .nav-container .internal:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
   font-weight: bolder;
   cursor: crosshair;
+  letter-spacing: 3px;
+}
+
+.nav-container .internal:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 
 .nav-container .help {
