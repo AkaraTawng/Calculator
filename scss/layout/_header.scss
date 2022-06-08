@@ -20,8 +20,11 @@
     };
    
     .nav-itm {
+<<<<<<< Updated upstream
         list-style-type: none;
         // background-color: #60d394;
+=======
+>>>>>>> Stashed changes
         padding: 20px;
         align-self: center;
         // border: solid black 1px;
@@ -32,8 +35,61 @@
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    .internal{
+       
+        position: relative;
+        padding-bottom: 0.5%;
+        font-size: 1.2rem;
+            
+        a {
+            text-decoration: none;
+            color: black;
+
+                :active {
+                    color: rgb(255, 0, 0);
+                }
+        
+                &:visited {
+                    color: black;
+                }
+        }
+       
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 60, 255));
+            transition: width 0.3s ease-out;
+
+        }
+
+        &:hover {
+            cursor: crosshair;
+            letter-spacing: 6px;
+            font-weight: bolder;
+            transition: all 0.4s ease;
+
+            &::before {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+
+
+    
+       
+    
+
+>>>>>>> Stashed changes
     .help{
-        margin-right: auto;
+        margin-right: auto;        
     }
 
     .social{
@@ -48,8 +104,15 @@
             :hover{
                 transform: rotate(10deg) scale(1.1);
                 color: black;
+<<<<<<< Updated upstream
                 transition: transform 0.1s linear;
                 
+=======
+            }
+
+            :active {
+                color: rgb(255, 255, 255);
+>>>>>>> Stashed changes
             }
 
             :visited{

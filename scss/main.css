@@ -210,7 +210,6 @@
 }
 
 .nav-container .nav-itm {
-  list-style-type: none;
   padding: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -222,6 +221,55 @@
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
+=======
+.nav-container .internal {
+  position: relative;
+  padding-bottom: 0.5%;
+  font-size: 1.2rem;
+}
+
+.nav-container .internal a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container .internal a :active {
+  color: red;
+}
+
+.nav-container .internal a:visited {
+  color: black;
+}
+
+.nav-container .internal::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
+  background-image: linear-gradient(to right, white, #003cff);
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.nav-container .internal:hover {
+  cursor: crosshair;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.nav-container .internal:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+>>>>>>> Stashed changes
 .nav-container .help {
   margin-right: auto;
 }
@@ -245,6 +293,10 @@
   transition: -webkit-transform 0.1s linear;
   transition: transform 0.1s linear;
   transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.nav-container .social .social-link :active {
+  color: white;
 }
 
 .nav-container .social .social-link :visited {
