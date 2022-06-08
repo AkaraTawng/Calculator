@@ -1,7 +1,6 @@
 @import '../utilities/fonts';
 
 .nav-container {
-    // border: solid 2px #ffd97d;
     border-bottom: solid 2px black;
     list-style-type: none;
     display: flex;
@@ -21,10 +20,8 @@
    
     .nav-itm {
         list-style-type: none;
-        // background-color: #60d394;
         padding: 20px;
         align-self: center;
-        // border: solid black 1px;
         margin: 0 15px;
 
         &:hover{
@@ -37,9 +34,6 @@
         padding-bottom: 0.5%;
         font-size: 1.2rem;
        
-        
-        
-
         &::before {
             content: '';
             position: absolute;
@@ -54,11 +48,10 @@
         }
 
         &:hover {
-            font-weight: bolder;
             cursor: crosshair;
-            letter-spacing: 3px;
-
-            
+            letter-spacing: 6px;
+            font-weight: bolder;
+            transition: all 0.4s ease;
 
             &::before {
                 width: 100%;

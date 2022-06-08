@@ -235,9 +235,11 @@
 }
 
 .nav-container .internal:hover {
-  font-weight: bolder;
   cursor: crosshair;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .nav-container .internal:hover::before {
