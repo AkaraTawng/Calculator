@@ -214,6 +214,13 @@
   cursor: pointer;
 }
 
+.nav-container .internal:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: bolder;
+  cursor: crosshair;
+}
+
 .nav-container .help {
   margin-right: auto;
 }

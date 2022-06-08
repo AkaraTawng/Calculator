@@ -32,6 +32,13 @@
         }
     }
 
+    .internal:hover {
+        transform: scale(1.2);  
+        font-weight: bolder;
+        cursor: crosshair;
+    }
+    
+
     .help{
         margin-right: auto;
     }
