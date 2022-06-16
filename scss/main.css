@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
-#buttons {
+.special-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.special-buttons-styling {
+  border-radius: 20px;
+  padding: 20px;
+  cursor: crosshair;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .btn-flex-container {
@@ -202,7 +210,6 @@
 }
 
 .nav-container .nav-itm {
-  list-style-type: none;
   padding: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -214,6 +221,68 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
+.nav-container .internal {
+  position: relative;
+  padding-bottom: 0.5%;
+  font-size: 1.2rem;
+}
+
+<<<<<<< HEAD
+.nav-container .internal a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container .internal a :active {
+  color: red;
+}
+
+.nav-container .internal a:visited {
+  color: black;
+}
+
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
+.nav-container .internal::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+<<<<<<< HEAD
+=======
+  background-color: red;
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
+  background-image: linear-gradient(to right, white, #003cff);
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.nav-container .internal:hover {
+  cursor: crosshair;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.nav-container .internal:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
 .nav-container .help {
   margin-right: auto;
 }
@@ -226,13 +295,21 @@
 
 .nav-container .social .social-link {
   cursor: crosshair;
-  color: black;
+  color: rgba(148, 39, 39, 0.767);
 }
 
 .nav-container .social .social-link :hover {
   -webkit-transform: rotate(10deg) scale(1.1);
           transform: rotate(10deg) scale(1.1);
   color: black;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.nav-container .social .social-link :active {
+  color: white;
 }
 
 .nav-container .social .social-link :visited {
@@ -261,6 +338,8 @@
   word-wrap: break-word;
   word-break: break-all;
   padding-right: 1.5%;
+  height: 8rem;
+  margin-bottom: -30px;
 }
 
 .previous-operand {
@@ -271,5 +350,59 @@
 .current-operand {
   color: #fff;
   font-size: 2.5rem;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-image: linear-gradient(129.1deg, #f3c753 26.8%, #12ebcf 114.1%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px;
+  padding-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* width: 28px; */
+  width: 80px;
+  height: 30px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.fa-moon {
+  color: #080807;
+}
+
+.fa-sun {
+  color: #ffd900;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  height: 37px;
+  background-color: white;
+  width: 39px;
+  left: 3px;
+  bottom: 3px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(48px);
+          transform: translateX(48px);
+}
+
+body {
+  background-image: url(/img/1201167.webp);
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

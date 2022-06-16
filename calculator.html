@@ -12,9 +12,9 @@
     <header>
         <nav class="nav">
             <ul class="nav-container">
-                <li class="nav-itm home">HOME</li>
-                <li class="nav-itm about">ABOUT</li>
-                <li class="nav-itm help">HELP</li>
+                <li class="nav-itm home internal"><a  target="_blank" href="#">HOME</a></li>
+                <li class="nav-itm about internal"><a  target="_blank" href="#">ABOUT</a></li>
+                <li class="nav-itm help internal"><a target="_blank" href="https://github.com/AkaraTawng/Calculator">HELP</a></li>
                 <h1 id="title">Calculator</h1>
                 <li class="nav-itm social" ><a class="social-link" href="https://github.com/AkaraTawng" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a></li>
                 <li class="nav-itm social"><a href="https://twitter.com/home" class="social-link" target="_blank"><i class="fa-brands fa-twitter-square fa-3x"></i></a></li>
@@ -31,8 +31,8 @@
                 <div class="current-operand" data-current-operand></div>
             </div>
             <button class="btn red-hover" data-all-clear   id="clear">AC</button>
-            <button class="btn green-hover" data-operation id="divide">&divide;</button>
-            <button class="btn green-hover" data-operation id="multiply">&times;</button>
+            <button class="btn green-hover" data-operation id="divide">/</button>
+            <button class="btn green-hover" data-operation id="multiply">x</button>
             <button class="btn red-hover" data-delete id="delete">DEL</button>
 
 
@@ -40,7 +40,7 @@
             <button class="btn" data-number id="seven">7</button>
             <button class="btn" data-number id="eight">8</button>
             <button class="btn" data-number id="nine">9</button>
-            <button class="btn green-hover" data-operation id="minus">&minus;</button>
+            <button class="btn green-hover" data-operation id="minus">-</button>
             
             <button class="btn" data-number id="four">4</button>
             <button class="btn" data-number id="five">5</button>
@@ -57,9 +57,14 @@
         </div>
     </main>
 
-    <section id="buttons">
+    <section class="special-buttons">
         <div class="btn-flex-container" >
-            <button>Theme</button>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon fa-2x"></i>
+                <i class="fas fa-sun fa-2x"></i>
+                <div class="ball"></div>
+            </label>
             <button>Destroy Math</button>
         </div>
     </section>

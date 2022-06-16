@@ -1,0 +1,274 @@
+﻿Diagnose log at 2022-06-06T23:32:55Z
+
+Executable: C:\Users\STRIX\Desktop\vendor\git-for-windows\mingw64\libexec\git-core\git-credential-manager-core.exe
+Version: 2.0.567+3047faf390
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 17134)
+Reading environment variables... OK
+ Variables:
+print_error=call "C:\Users\STRIX\Desktop\vendor\lib\lib_console.cmd" show_error
+lib_path=call "C:\Users\STRIX\Desktop\vendor\lib\lib_path.cmd"
+ConEmuPID=33536
+PUBLIC=C:\Users\Public
+ConEmuArgs=/Icon "C:\Users\STRIX\Desktop\icons\cmder.ico" /Title Cmder
+ALLUSERSPROFILE=C:\ProgramData
+print_debug=if 0 gtr 0 call "C:\Users\STRIX\Desktop\vendor\lib\lib_console.cmd" debug_output
+position=append
+LOCALAPPDATA=C:\Users\STRIX\AppData\Local
+CMDER_SHELL=cmd
+GIT_EXEC_PATH=C:/Users/STRIX/Desktop/vendor/git-for-windows/mingw64/libexec/git-core
+ConEmuTask={cmd::Cmder}
+ConEmuHWND=0x0008076E
+GIT_INSTALL_ROOT=C:\Users\STRIX\Desktop\vendor\git-for-windows
+OneDrive=C:\Users\STRIX\OneDrive
+time_init=0
+lib_profile=call "C:\Users\STRIX\Desktop\vendor\lib\lib_profile.cmd"
+print_verbose=if 0 gtr 0 call "C:\Users\STRIX\Desktop\vendor\lib\lib_console.cmd" verbose_output
+git_locale="C:\Users\STRIX\Desktop\vendor\git-for-windows\usr\bin\locale.exe"
+ANSICON=168x1000 (168x41)
+ProgramW6432=C:\Program Files
+ConEmuServerPID=33256
+cexec="C:\Users\STRIX\Desktop\vendor\bin\cexec.cmd"
+ConEmuCfgDir=C:\Users\STRIX\Desktop\vendor\conemu-maximus5
+feNot=false
+ConEmuAnsiLog=
+CMDER_ROOT=C:\Users\STRIX\Desktop
+TEMP=C:\Users\STRIX\AppData\Local\Temp
+SystemDrive=C:
+MSYSTEM=MINGW64
+OS=Windows_NT
+PROCESSOR_ARCHITECTURE=x86
+found=1
+git_executable=C:\Users\STRIX\Desktop\vendor\git-for-windows\cmd\git.exe
+CMDER_INIT_END= 6:22:00.65
+lib_base=call "C:\Users\STRIX\Desktop\vendor\lib\lib_base.cmd"
+lib_console=call "C:\Users\STRIX\Desktop\vendor\lib\lib_console.cmd"
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+add_to_path=C:\Users\STRIX\Desktop
+clink_architecture=x64
+GIT_VERSION_VENDORED=2.34.0.windows.1
+fast_init=0
+CommonProgramW6432=C:\Program Files\Common Files
+ProgramFiles(x86)=C:\Program Files (x86)
+USERPROFILE=C:\Users\STRIX
+currenArgu=/setpath
+VENDORED_MAJOR=2
+ConEmuDir=C:\Users\STRIX\Desktop\vendor\conemu-maximus5
+feFlagName= 
+ProgramData=C:\ProgramData
+debug_output=0
+ConEmuPalette=Monokai
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+USERNAME=STRIX
+TERM=cygwin
+LANG=en_US.UTF-8
+CMDER_CLINK=1
+ANSICON_DEF=7
+ProgramFiles=C:\Program Files (x86)
+COLUMNS=168
+ConEmuDrive=C:
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PROCESSOR_REVISION=5e03
+ChocolateyInstall=C:\ProgramData\chocolatey
+CM2015DIR=C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\
+MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
+LOGONSERVER=\\ASUS-STRIX
+max_depth=1
+COMPUTERNAME=ASUS-STRIX
+VENDORED_MINOR=34
+add_path=C:\Users\STRIX\Desktop
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+SystemRoot=C:\WINDOWS
+ConEmuBuild=210912
+ComSpec=C:\WINDOWS\system32\cmd.exe
+lib_git=call "C:\Users\STRIX\Desktop\vendor\lib\lib_git.cmd"
+PROCESSOR_LEVEL=6
+ConEmuBaseDir=C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu
+HOMEDRIVE=C:
+ConEmuArgs2=
+Path=C:/Users/STRIX/Desktop/vendor/git-for-windows/mingw64/libexec/git-core;C:\Users\STRIX\Desktop\vendor\git-for-windows\mingw64\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\usr\bin;C:\Users\STRIX\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\cmd;C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\STRIX\Desktop\vendor\conemu-maximus5;C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\STRIX\AppData\Local\Microsoft\WindowsApps;C:\Users\STRIX\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\STRIX\AppData\Roaming\npm;C:\Users\STRIX\AppData\Local\GitHubDesktop\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\mingw64\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\usr\bin;C:\Users\STRIX\Desktop\vendor\bin;C:\Users\STRIX\Desktop
+nix_tools=1
+USERDOMAIN_ROAMINGPROFILE=ASUS-STRIX
+ConEmuConfig=
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+ConEmuWorkDrive=C:
+CMDER_CONFIGURED=1
+windir=C:\WINDOWS
+ChocolateyLastPathUpdate=132897927491835047
+TMP=C:\Users\STRIX\AppData\Local\Temp
+CMDER_INIT_START= 6:21:59.04
+ccall=call "C:\Users\STRIX\Desktop\vendor\bin\cexec.cmd"
+INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+APPDATA=C:\Users\STRIX\AppData\Roaming
+ConEmuANSI=ON
+verbose_output=0
+SVN_SSH=C:\\Users\\STRIX\\Desktop\\vendor\\git-for-windows\\bin\\ssh.exe
+ConEmuBaseDirShort=C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu
+USERDOMAIN=ASUS-STRIX
+path_position=append
+NUMBER_OF_PROCESSORS=8
+TMPDIR=C:\Users\STRIX\AppData\Local\Temp
+CMDER_USER_FLAGS= 
+ConEmuWorkDir=C:\Users\STRIX\Desktop
+find_query=C:\\Users\\STRIX\\Desktop
+DriverData=C:\Windows\System32\Drivers\DriverData
+SESSIONNAME=Console
+PLINK_PROTOCOL=ssh
+VENDORED_BUILD=windows.1
+depth=1
+HOMEPATH=\Users\STRIX
+user_aliases=C:\Users\STRIX\Desktop\config\user_aliases.cmd
+VENDORED_PATCH=0
+CMDER_ALIASES=1
+LINES=41
+HOME=C:\Users\STRIX
+PROMPT=CLINK $P$G
+PROCESSOR_ARCHITEW6432=AMD64
+OLD_PATH=C:\Users\STRIX\Desktop\vendor\git-for-windows\cmd;C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\STRIX\Desktop\vendor\conemu-maximus5;C:\Users\STRIX\Desktop\vendor\conemu-maximus5\ConEmu;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\STRIX\AppData\Local\Microsoft\WindowsApps;C:\Users\STRIX\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\STRIX\AppData\Roaming\npm;C:\Users\STRIX\AppData\Local\GitHubDesktop\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\mingw64\bin;C:\Users\STRIX\Desktop\vendor\git-for-windows\usr\bin;C:\Users\STRIX\Desktop\vendor\bin
+ConEmuBackHWND=0x001007B2
+ConEmuDrawHWND=0x001107BC
+architecture_bits=64
+ConEmuHooks=Enabled
+aliases=C:\Users\STRIX\Desktop\config\user_aliases.cmd
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\STRIX\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\STRIX\AppData\Local\Temp\aed04197b39d9ae53648b315'... OK
+Reading from temporary file 'C:\Users\STRIX\AppData\Local\Temp\aed04197b39d9ae53648b315'... OK
+Deleting temporary file 'C:\Users\STRIX\AppData\Local\Temp\aed04197b39d9ae53648b315'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\STRIX
+UserDataDirectoryPath: C:\Users\STRIX\.gcm
+GetCurrentDirectory(): C:\Users\STRIX\Desktop\Tawan\fcccalculator
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:62265/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:62268/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.34.0.windows.1'
+Locating current repository... OK
+Git repository at 'C:/Users/STRIX/Desktop/Tawan/fcccalculator/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	core.symlinks=false
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	core.autocrlf=true
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	core.fscache=true
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	color.diff=auto
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	color.status=auto
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	color.branch=auto
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	color.interactive=true
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	help.format=html
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	rebase.autosquash=true
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	filter.lfs.required=true
+file:C:/Users/STRIX/Desktop/vendor/git-for-windows/etc/gitconfig	credential.helper=!"C:/Users/STRIX/Desktop/vendor/git-for-windows/mingw64/libexec/git-core/git-credential-manager-core.exe"
+file:C:/Users/STRIX/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/STRIX/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/STRIX/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/STRIX/.gitconfig	filter.lfs.required=true
+file:C:/Users/STRIX/.gitconfig	user.name=Christopher Chamberlain
+file:C:/Users/STRIX/.gitconfig	user.email=c.r.chamberlain1997@gmail.com
+file:C:/Users/STRIX/.gitconfig	core.editor="C:\Users\STRIX\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/STRIX/.gitconfig	color.ui=auto
+file:C:/Users/STRIX/.gitconfig	credential.helperselector.selected=<no helper>
+file:C:/Users/STRIX/.gitconfig	http.postbuffer=100000000
+file:C:/Users/STRIX/.gitconfig	credential.helper=manager
+file:C:/Users/STRIX/.gitconfig	credential.helper=
+file:C:/Users/STRIX/.gitconfig	credential.helper=C:/Users/STRIX/Desktop/vendor/git-for-windows/mingw64/libexec/git-core/git-credential-manager-core.exe
+file:C:/Users/STRIX/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/AkaraTawng/Calculator.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\STRIX\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\STRIX\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

@@ -1,8 +1,24 @@
 @import '../utilities/colors';
 
-#buttons {
+.special-buttons {
         display: flex;
         justify-content: space-evenly;
+       
+        &-styling {
+            border-radius: 20px;
+            padding: 20px;
+            cursor:crosshair; 
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    #special-theme-button {
+
+    }
+
+    #special-destroy-math-button {
+
     }
 
 .btn-flex-container{
@@ -14,6 +30,7 @@
     justify-content: space-around;
     margin: -40% auto 0 5%; 
 }
+
 
 .grid-container {
     margin: 0 auto;
