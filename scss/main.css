@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
-#buttons {
+.special-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.special-buttons-styling {
+  border-radius: 20px;
+  padding: 20px;
+  cursor: crosshair;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .btn-flex-container {
@@ -35,7 +43,12 @@
   grid-gap: 1px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "ou ou ou ou" "ac del di mu"  " se ei ni mi" " fo fi si pl" "on tw th eq" "ze ze de eq";
+      grid-template-areas: "ou ou ou ou"
+ "ac del di mu" 
+ " se ei ni mi"
+ " fo fi si pl"
+ "on tw th eq"
+ "ze ze de eq";
 }
 
 .grid-container .btn {
@@ -202,7 +215,6 @@
 }
 
 .nav-container .nav-itm {
-  list-style-type: none;
   padding: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -232,6 +244,18 @@
   padding-bottom: 0.5%;
   font-size: 1.2rem;
 }
+.nav-container .internal a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container .internal a :active {
+  color: red;
+}
+
+.nav-container .internal a:visited {
+  color: black;
+}
 
 .nav-container .internal::before {
   content: '';
@@ -240,7 +264,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: red;
+
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
   background-image: linear-gradient(to right, white, #003cff);
   -webkit-transition: width 0.3s ease-out;
@@ -273,13 +297,21 @@
 
 .nav-container .social .social-link {
   cursor: crosshair;
-  color: rgba(0, 0, 0, 0.767);
+  color: rgba(148, 39, 39, 0.767);
 }
 
 .nav-container .social .social-link :hover {
   -webkit-transform: rotate(10deg) scale(1.1);
           transform: rotate(10deg) scale(1.1);
   color: black;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.nav-container .social .social-link :active {
+  color: white;
 }
 
 .nav-container .social .social-link :visited {
