@@ -214,6 +214,40 @@
   cursor: pointer;
 }
 
+.nav-container .internal {
+  position: relative;
+  padding-bottom: 0.5%;
+  font-size: 1.2rem;
+}
+
+.nav-container .internal::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
+  background-image: linear-gradient(to right, white, #003cff);
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.nav-container .internal:hover {
+  cursor: crosshair;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.nav-container .internal:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
 .nav-container .help {
   margin-right: auto;
 }
@@ -325,7 +359,7 @@
 }
 
 body {
-  background-image: url("/img/1201167.webp");
+  background-image: url(/img/1201167.webp);
   background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
