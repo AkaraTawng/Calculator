@@ -24,9 +24,23 @@
         align-self: center;
         margin: 0 15px;
 
-        &:hover{
-            cursor:pointer;
+        a {
+            list-style-type: none;
+            text-decoration: none;
+
+            &:hover{
+                cursor:pointer;
+            }
+
+            &:visited {
+                color: black;
+            }
+
+            &:active {
+                color: white;
+            }
         }
+        
     }
 
     .internal{

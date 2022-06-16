@@ -210,8 +210,21 @@
   margin: 0 15px;
 }
 
-.nav-container .nav-itm:hover {
+.nav-container .nav-itm a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav-container .nav-itm a:hover {
   cursor: pointer;
+}
+
+.nav-container .nav-itm a:visited {
+  color: black;
+}
+
+.nav-container .nav-itm a:active {
+  color: white;
 }
 
 .nav-container .internal {
