@@ -1,7 +1,6 @@
 @import '../utilities/fonts';
 
 .nav-container {
-    // border: solid 2px #ffd97d;
     border-bottom: solid 2px black;
     list-style-type: none;
     display: flex;
@@ -21,16 +20,49 @@
    
     .nav-itm {
         list-style-type: none;
-        // background-color: #60d394;
         padding: 20px;
         align-self: center;
-        // border: solid black 1px;
         margin: 0 15px;
 
         &:hover{
             cursor:pointer;
         }
     }
+
+    .internal{
+        position: relative;
+        padding-bottom: 0.5%;
+        font-size: 1.2rem;
+       
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 60, 255));
+            transition: width 0.3s ease-out;
+
+        }
+
+        &:hover {
+            cursor: crosshair;
+            letter-spacing: 6px;
+            font-weight: bolder;
+            transition: all 0.4s ease;
+
+            &::before {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+    
+       
+    
 
     .help{
         margin-right: auto;
@@ -43,7 +75,7 @@
 
         .social-link {
             cursor: crosshair;
-            color: black;
+            color: rgba(0, 0, 0, 0.767);
             
             :hover{
                 transform: rotate(10deg) scale(1.1);
