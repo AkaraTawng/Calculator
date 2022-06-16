@@ -1,7 +1,6 @@
 @import '../utilities/fonts';
 
 .nav-container {
-    // border: solid 2px #ffd97d;
     border-bottom: solid 2px black;
     list-style-type: none;
     display: flex;
@@ -22,12 +21,14 @@
     .nav-itm {
 <<<<<<< Updated upstream
         list-style-type: none;
+<<<<<<< HEAD
         // background-color: #60d394;
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
         padding: 20px;
         align-self: center;
-        // border: solid black 1px;
         margin: 0 15px;
 
         &:hover{
@@ -35,6 +36,7 @@
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     .internal{
@@ -55,6 +57,12 @@
                     color: black;
                 }
         }
+=======
+    .internal{
+        position: relative;
+        padding-bottom: 0.5%;
+        font-size: 1.2rem;
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
        
         &::before {
             content: '';
@@ -63,6 +71,10 @@
             bottom: 0;
             width: 0;
             height: 2px;
+<<<<<<< HEAD
+=======
+            background-color: red;
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
             background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 60, 255));
             transition: width 0.3s ease-out;
 
@@ -81,13 +93,19 @@
             }
         }
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
     
        
     
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 001c43b1980b0117603df8eeb7599537c1a772cf
     .help{
         margin-right: auto;        
     }
