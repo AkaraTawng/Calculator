@@ -281,6 +281,10 @@
   color: black;
 }
 
+.nav-container .social .social-link :active {
+  color: white;
+}
+
 .nav-container .social .social-link :visited {
   text-decoration: none;
   color: black;
