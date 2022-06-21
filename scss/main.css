@@ -240,7 +240,6 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: red;
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(#003cff));
   background-image: linear-gradient(to right, white, #003cff);
   -webkit-transition: width 0.3s ease-out;
