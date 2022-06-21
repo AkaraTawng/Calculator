@@ -1,5 +1,37 @@
-body.dark {
-    background-image: url(/img/nMqfUc.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+body{
+
+
+        &.dark {
+        background-image: url(/img/nMqfUc.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+        .nav-container{
+            
+            .social {
+            
+                .social-link {
+                    cursor: crosshair;
+                    color: rgba(255, 255, 255, 0.5);
+                    
+                    :hover{
+                        cursor: crosshair;
+                        transform: rotate(10deg) scale(1.1);
+                        color: rgb(255, 255, 255); 
+                    };
+                
+                    :active {
+                        color: white;
+                    };
+                
+                    :visited{
+                        text-decoration: none;
+                        color: rgba(255, 255, 255, 0.5);
+                    };
+                };
+            };
+        };
+     
+    };
 };
