@@ -132,7 +132,9 @@ const deleteButton = document.querySelector("[data-delete]");
 const allClearButton = document.querySelector("[data-all-clear]");
 const previousOperandTextElement = document.querySelector("[data-previous-operand]");
 const currentOperandTextElement = document.querySelector("[data-current-operand]");
-const themeToggle = document.querySelector("#checkbox")
+const themeToggle = document.querySelector("#checkbox");
+const destroyMath = document.querySelector("#destroy-math-btn");
+const title = document.querySelector("#title");
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -179,6 +181,11 @@ deleteButton.addEventListener('click', button => {
 
 
 themeToggle.addEventListener('change', () => {
-    document.body.classlist.toggle("dark");
+    document.body.classList.toggle("dark");
+    
+});
+
+destroyMath.addEventListener('click', () => {
+    document.body.classList.toggle("hidden");
 });
 
