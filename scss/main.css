@@ -371,8 +371,15 @@
           transform: translateX(48px);
 }
 
+body.dark {
+  background-image: url(/img/nMqfUc.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 body {
   background-image: url(/img/1201167.webp);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
