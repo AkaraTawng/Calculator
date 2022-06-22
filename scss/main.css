@@ -346,6 +346,7 @@
   height: 30px;
   border-radius: 50px;
   position: relative;
+  border: solid #74b3ff 1px;
 }
 
 .fa-moon {
