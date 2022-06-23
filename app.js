@@ -189,3 +189,10 @@ destroyMath.addEventListener('click', () => {
     document.body.classList.toggle("hidden");
 });
 
+
+//jQUERY
+
+$(document).ready(function(){
+     
+});
+

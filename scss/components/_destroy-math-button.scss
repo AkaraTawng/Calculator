@@ -1,0 +1,21 @@
+// .hidden{
+//     display: none;
+// };
+
+#destroy-math-btn {
+    background-color: rgba(3, 83, 164, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 10px 12px 10px;
+    border-radius: 50px;
+    border: solid rgb(116, 179, 255) 1px;
+
+}
+
+#destroy-math-btn:hover{
+    background-color: rgba(3, 83, 164, 1);
+    color: white
+};
+
+#destroy-math-btn:active{
+
+};
