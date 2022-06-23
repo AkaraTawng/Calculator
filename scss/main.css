@@ -435,6 +435,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hidden {
+  display: none;
+}
+
 #destroy-math-btn {
   background-color: rgba(3, 83, 164, 0.4);
   color: rgba(255, 255, 255, 0.6);
