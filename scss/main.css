@@ -447,4 +447,8 @@ body {
   background-color: #0353a4;
   color: white;
 }
+
+#destroy-math-btn:active {
+  background-color: #00a6fb;
+}
 /*# sourceMappingURL=main.css.map */
