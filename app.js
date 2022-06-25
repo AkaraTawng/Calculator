@@ -1,3 +1,4 @@
+const { default: ca } = require("date-fns/esm/locale/ca/index.js");
 
 
 class Calculator {
@@ -135,6 +136,7 @@ const currentOperandTextElement = document.querySelector("[data-current-operand]
 const themeToggle = document.querySelector("#checkbox");
 const destroyMath = document.querySelector("#destroy-math-btn");
 const title = document.querySelector("#title");
+const calc = document.querySelector(".grid-container");
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -182,12 +184,12 @@ deleteButton.addEventListener('click', button => {
 
 themeToggle.addEventListener('change', () => {
     document.body.classList.toggle("dark");
-    
 });
 
 destroyMath.addEventListener('click', () => {
-    document.body.classList.toggle("hidden");
+ 
 });
+
 
 
 //jQUERY
