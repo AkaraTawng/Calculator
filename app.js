@@ -196,7 +196,13 @@ const change = () => {
 //else elem.value = "Close Curtain";
 
 destroyMath.addEventListener('click', () => {
-    calc.classList.toggle("animate__backOutDown");
+    if(calc.classList.contains("animate__backInDown")){
+        calc.classList.remove("animate__backInDown")
+        calc.classList.add("animate__backOutDown")
+    } else if(calc.classList.contains("animate__backOutDown")){
+        calc.classList.remove("animate__backOutDown")
+        calc.classList.add("animate__backInDown")
+    };
     change();
 });
 
