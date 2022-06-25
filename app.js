@@ -135,6 +135,7 @@ const currentOperandTextElement = document.querySelector("[data-current-operand]
 const themeToggle = document.querySelector("#checkbox");
 const destroyMath = document.querySelector("#destroy-math-btn");
 const title = document.querySelector("#title");
+const calc = document.querySelector(".grid-container");
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -185,10 +186,19 @@ themeToggle.addEventListener('change', () => {
     
 });
 
-destroyMath.addEventListener('click', () => {
-    document.body.classList.toggle("hidden");
-});
+const change = () => {
+    if (destroyMath.innerHTML === "Destroy Math"){
+        destroyMath.innerHTML = "Ressurect Math";
+    } else destroyMath.innerHTML = "Destroy Math";
+};
 
+//if (elem.value=="Close Curtain") elem.value = "Open Curtain";
+//else elem.value = "Close Curtain";
+
+destroyMath.addEventListener('click', () => {
+    calc.classList.toggle("animate__backOutDown");
+    change();
+});
 
 //jQUERY
 
