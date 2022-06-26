@@ -462,6 +462,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #footer #sitemap-container {
@@ -485,6 +488,10 @@ body {
 
 #footer #sitemap-container ul {
   list-style-type: none;
+}
+
+#footer #copyright {
+  color: white;
 }
 
 * {
