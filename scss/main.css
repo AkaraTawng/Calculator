@@ -494,6 +494,15 @@ body {
   color: white;
 }
 
+#footer #fter-social-links a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer #fter-social-links ul {
+  list-style-type: none;
+}
+
 * {
   margin: 0;
 }
