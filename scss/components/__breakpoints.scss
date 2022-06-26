@@ -1,0 +1,30 @@
+$breakpoints: (
+    "mobile": 360px, 
+    "tablet": 768px, 
+    "desktop": 1366px, 
+    "hi-res": 1920px,
+);
+
+@mixin mobile {
+    @media (min-width: map-get($breakpoints, "mobile")){
+        @content;
+    };
+};
+
+@mixin tablet {
+    @media (min-width: map-get($breakpoints, "tablet")){
+        @content;
+    };
+};
+
+@mixin desktop {
+    @media(min-width: map-get($breakpoints, "desktop")){
+        @content;
+    };
+};
+
+@mixin hi-res {
+    @media(min-width: map-get($breakpoints, "hi-res")){
+        @content;
+    };
+};
