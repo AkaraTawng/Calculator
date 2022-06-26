@@ -464,7 +464,7 @@ body {
   display: flex;
 }
 
-#sitemap-container {
+#footer #sitemap-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,6 +472,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#footer #sitemap-container h2 {
+  color: white;
+}
+
+#footer #sitemap-container a {
+  color: white;
 }
 
 * {

@@ -5,9 +5,18 @@
     margin: 0;
     border-top: solid white 2px;
     display: flex;
+
+    #sitemap-container {
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            color: white;
+        };
+
+        a{
+            color: white;
+        };
+    };
 };
 
-#sitemap-container {
-    display: flex;
-    flex-direction: column;
-};
