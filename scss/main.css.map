@@ -11,7 +11,8 @@
         "components/_theme-toggle-button.scss",
         "themes/_dark-theme.scss",
         "themes/_light-theme.scss",
-        "components/_destroy-math-button.scss"
+        "components/_destroy-math-button.scss",
+        "layout/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
