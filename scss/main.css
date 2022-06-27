@@ -453,6 +453,7 @@ body {
   padding: 12px 10px 12px 10px;
   border-radius: 50px;
   border: solid #74b3ff 1px;
+  font-family: "Cairo", sans-serif;
 }
 
 #destroy-math-btn:hover {
