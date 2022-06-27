@@ -22,8 +22,16 @@
         };
 
         a{
-            color: white;
+            color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
+
+            &:hover{
+                color: white;
+            };
+
+            &:active{
+                text-decoration: underline;
+            };
         };
 
         ul{

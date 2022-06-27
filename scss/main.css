@@ -489,8 +489,16 @@ body {
 }
 
 #footer #sitemap-container a {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+#footer #sitemap-container a:hover {
+  color: white;
+}
+
+#footer #sitemap-container a:active {
+  text-decoration: underline;
 }
 
 #footer #sitemap-container ul {
