@@ -52,8 +52,19 @@
         };
 
         ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             list-style-type: none;
         };
+    };
+
+    #copyright-and-social-flex-container{
+        // background-color: magenta;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 10rem;
     };
 
     #contact-section{
@@ -67,6 +78,8 @@
             color: white;
             align-self: flex-start
         };
+
+
 
         /* ul */
         .contact{
