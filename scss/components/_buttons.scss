@@ -3,7 +3,7 @@
 #buttons {
         display: flex;
         justify-content: space-evenly;
-    }
+    };
 
 .btn-flex-container{
     display: flex;
@@ -13,8 +13,7 @@
     height: 50vh;
     justify-content: space-around;
     margin: -40% auto 0 5%; 
-}
-
+};
 
 .grid-container {
     margin: 0 auto;
@@ -47,25 +46,32 @@
         &:hover {
             cursor: pointer;
             background-color: $numberBtnGrey; //make variable
-        }
+        };
+
+        &:active{
+            background-color: darken($numberBtnGrey, 10%);
+        };
 
         &.green-hover:hover {
             background-color: $operatorBtnGreen; //make variable
-        }
+
+            &:active{
+                background-color: darken($operatorBtnGreen, 10%);
+            };
+        };
 
         &.red-hover:hover { 
             background-color: $clearButtonRed ; //make variable
-        }
-       
-    }
 
-    
-    
+            &:active{
+                background-color: darken($clearButtonRed, 10%);
+            };
+        };
+    };
 
     #output {
         grid-area: ou;
-    }
-    
+    };
 
     #clear {
         // background-color: #a0c4ff;
@@ -75,36 +81,31 @@
     #divide {
         grid-area: di;
     
-    }
+    };
     
     #multiply {
         grid-area: mu;
-    
-    }
+    };
 
     #delete {
         grid-area: del;
-    }
+    };
     
     #seven {
         grid-area: se;
-    
-    }
+    };
     
     #eight {
         grid-area: ei;
-    
-    }
+    };
     
     #nine {
         grid-area: ni;
-    
-    }
+    };
     
     #minus {
         grid-area: mi;
-    
-    }
+    };
     
     #four {
         grid-area: fo;    
@@ -112,46 +113,38 @@
     
     #five {
         grid-area: fi;
-    
-    }
+    };
     
     #six {
         grid-area: si;
-    
-    }
+    };
     
     #plus {
         grid-area: pl;
-    
-    }
+    };
     
     
     #one {
         grid-area: on;
-    
-    }
+    };
     
     #two {
         grid-area: tw;
-    
-    }
+    };
     
     #three {
         grid-area: th;    
-    
-    }
+    };
     
     #zero {
         grid-area: ze;
-    
-    }
+    };
     
     #decimal {
         grid-area: de;
-
-    }
+    };
     
     #equals {
         grid-area: eq;    
-    }
+    };
 };

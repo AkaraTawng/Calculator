@@ -49,12 +49,24 @@
   background-color: #dfdfdf;
 }
 
+.grid-container .btn:active {
+  background-color: #c6c6c6;
+}
+
 .grid-container .btn.green-hover:hover {
   background-color: #90ee90;
 }
 
+.grid-container .btn.green-hover:hover:active {
+  background-color: #64e764;
+}
+
 .grid-container .btn.red-hover:hover {
   background-color: #ee6055;
+}
+
+.grid-container .btn.red-hover:hover:active {
+  background-color: #e93527;
 }
 
 .grid-container #output {
