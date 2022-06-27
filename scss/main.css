@@ -455,7 +455,7 @@ body {
 
 /* outermost flex container */
 #footer {
-  height: 10rem;
+  height: 11rem;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   margin: 0;
@@ -465,6 +465,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 0;
   /* flex container for ul and h2 */
 }
 
