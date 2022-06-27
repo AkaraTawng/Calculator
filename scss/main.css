@@ -605,6 +605,20 @@ body {
   color: white;
 }
 
+#footer #contact-section .contact a {
+  color: white;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#footer #contact-section .contact a:hover {
+  color: white;
+}
+
+#footer #contact-section .contact a:active {
+  text-decoration: underline;
+}
+
 #footer #contact-section .contact #phone-span {
   font-weight: 700;
   font-family: "Cairo", sans-serif;
