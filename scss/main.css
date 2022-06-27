@@ -515,6 +515,10 @@ body {
 
 #footer #fter-social-links a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#footer #fter-social-links a:hover {
   color: white;
 }
 
@@ -530,6 +534,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
+  margin-right: 20%;
 }
 
 #footer #copyright-and-social-flex-container {
