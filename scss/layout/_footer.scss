@@ -27,6 +27,7 @@
         };
 
         ul{
+            // background-color: darkgoldenrod;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -53,8 +54,31 @@
         ul{
             list-style-type: none;
         };
+    };
 
-        li{
+    #contact-section{
+        display: flex;
+        flex-direction: column;
+        // background-color: coral;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        h2{
+            color: white;
+            align-self: flex-start
+        };
+
+        /* ul */
+        .contact{
+            display: flex;
+            flex-direction: column;
+            // background-color: crimson;
+            margin-left: -12%;
+            height: 4rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            list-style-type: none;
+            color: white;
         };
     };
 };
