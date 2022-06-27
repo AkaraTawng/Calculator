@@ -482,10 +482,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer #sitemap-container h2 {
   color: white;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer #sitemap-container a {
@@ -519,6 +521,7 @@ body {
 
 #footer #copyright {
   color: white;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer #fter-social-links a {
@@ -579,6 +582,7 @@ body {
   color: white;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer #contact-section .contact {
@@ -603,10 +607,12 @@ body {
 
 #footer #contact-section .contact #phone-span {
   font-weight: 700;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer #contact-section .contact #email-span {
   font-weight: 700;
+  font-family: "Cairo", sans-serif;
 }
 
 * {
