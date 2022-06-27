@@ -601,6 +601,14 @@ body {
   color: white;
 }
 
+#footer #contact-section .contact #phone-span {
+  font-weight: 700;
+}
+
+#footer #contact-section .contact #email-span {
+  font-weight: 700;
+}
+
 * {
   margin: 0;
 }
