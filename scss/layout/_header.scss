@@ -3,19 +3,33 @@
 .nav-container {
     border-bottom: solid 2px black;
     list-style-type: none;
+    // background-color: magenta;
     display: flex;
     flex-direction: row;
     height: 5rem;
-    justify-content: flex-end;
-    flex: 1 1 0 ;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;//basis 0, shrink 1, grow 1
     text-align: center;
     padding-bottom: 1rem;
     
+    #internal-container{
+        // background-color: aqua;
+        display: flex;
+        flex-direction: row;
+    };
+
+    .social-links-container{
+        display: flex;
+        flex-direction: row;
+        // background-color: palegreen;
+    };
 
     h1 {
-        margin: 0px 26% 0 7%;
+        margin: auto;
         font-size: 2.4rem;
         font-family: $titleFont;
+        // background-color: orange;
     };
    
     .nav-itm {
@@ -26,27 +40,24 @@
 
         &.internal {
             a {
-                color: white;
                 list-style-type: none;
                 text-decoration: none;
                 font-family: $titleFont;
     
                 &:hover{
                     cursor:pointer;
-                }
+                };
     
                 &:visited {
                     color: black;
-                }
+                };
     
                 &:active {
                     color: white;
-                }
-            }
-        }
-     
-        
-    }
+                };
+            };
+        };
+    };
 
     .internal{
         position: relative;
@@ -62,8 +73,7 @@
             height: 2px;
             background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 60, 255));
             transition: width 0.3s ease-out;
-
-        }
+        };
 
         &:hover {
             cursor: pointer;
@@ -75,15 +85,13 @@
                 width: 100%;
                 left: 0;
                 right: auto;
-            }
-        }
-    }
+            };
+        };
+    };
     
-    .help{
-        margin-right: auto;
-    }
+    // .help{
 
-    
+    // };
 
     .social{
         border: none;       
@@ -97,20 +105,17 @@
             :hover{
                 transform: rotate(10deg) scale(1.1);
                 color: black;
-                
-            }
+            };
 
             :active {
                 color: white;
-            }
+            };
 
             :visited{
                 text-decoration: none;
                 color: black;
-            }
-        }
-    
-    }
-
-}
+            };
+        };
+    };
+};
 
