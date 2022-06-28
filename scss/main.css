@@ -226,6 +226,7 @@
   color: white;
   list-style-type: none;
   text-decoration: none;
+  font-family: "Cairo", sans-serif;
 }
 
 .nav-container .nav-itm.internal a:hover {
@@ -453,6 +454,7 @@ body {
   padding: 12px 10px 12px 10px;
   border-radius: 50px;
   border: solid #74b3ff 1px;
+  font-family: "Cairo", sans-serif;
 }
 
 #destroy-math-btn:hover {
