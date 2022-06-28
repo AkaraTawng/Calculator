@@ -197,18 +197,40 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 5rem;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
   padding-bottom: 1rem;
 }
 
+.nav-container #internal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-container .social-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .nav-container h1 {
-  margin: 0px 26% 0 7%;
+  margin: auto;
   font-size: 2.4rem;
   font-family: "Cairo", sans-serif;
 }
@@ -223,7 +245,6 @@
 }
 
 .nav-container .nav-itm.internal a {
-  color: white;
   list-style-type: none;
   text-decoration: none;
   font-family: "Cairo", sans-serif;
@@ -272,10 +293,6 @@
   width: 100%;
   left: 0;
   right: auto;
-}
-
-.nav-container .help {
-  margin-right: auto;
 }
 
 .nav-container .social {
