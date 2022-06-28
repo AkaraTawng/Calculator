@@ -226,6 +226,7 @@
   color: white;
   list-style-type: none;
   text-decoration: none;
+  font-family: "Cairo", sans-serif;
 }
 
 .nav-container .nav-itm.internal a:hover {
