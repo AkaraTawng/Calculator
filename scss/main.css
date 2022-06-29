@@ -35,6 +35,10 @@
   margin: 4.9rem auto 4rem auto;
 }
 
+.after-destroy.dark {
+  background-image: url(../../img/deadComWhite.png);
+}
+
 .grid-container {
   margin: 0 auto;
   margin-top: 3rem;

@@ -26,6 +26,10 @@
     background-size: cover;
     width: 28rem;
     margin: 4.9rem auto 4rem auto;
+
+    &.dark{
+        background-image: url(../../img/deadComWhite.png);
+    };
 };
 
 .grid-container {
