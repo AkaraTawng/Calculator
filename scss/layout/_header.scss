@@ -1,4 +1,5 @@
 @import '../utilities/fonts';
+@import '../components/_breakpoints';
 
 .nav-container {
     border-bottom: solid 2px black;
@@ -101,6 +102,9 @@
         .social-link {
             cursor: crosshair;
             color: rgba(0, 0, 0, 0.767);
+            @include tablet {
+                display: none;
+            };
             
             :hover{
                 transform: rotate(10deg) scale(1.1);

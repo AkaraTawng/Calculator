@@ -336,6 +336,12 @@
   color: rgba(0, 0, 0, 0.767);
 }
 
+@media (max-width: 768px) {
+  .nav-container .social .social-link {
+    display: none;
+  }
+}
+
 .nav-container .social .social-link :hover {
   -webkit-transform: rotate(10deg) scale(1.1);
           transform: rotate(10deg) scale(1.1);
