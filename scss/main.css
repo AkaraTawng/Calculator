@@ -20,7 +20,7 @@
   height: 50vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: -40% auto 0 5%;
+  margin-left: 3rem;
 }
 
 #main-flex-container {
