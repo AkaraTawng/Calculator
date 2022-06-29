@@ -22,6 +22,19 @@
   margin: -40% auto 0 5%;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.after-destroy {
+  background-image: url(../../img/deadcom.png);
+  height: 28rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28rem;
+  margin: 4.9rem auto 4rem auto;
+}
+
 .grid-container {
   margin: 0 auto;
   margin-top: 3rem;
