@@ -265,6 +265,12 @@
   font-family: "Cairo", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .nav-container h1 {
+    margin-left: 35%;
+  }
+}
+
 .nav-container .nav-itm {
   list-style-type: none;
   padding: 20px;
