@@ -184,6 +184,7 @@ deleteButton.addEventListener('click', button => {
 
 themeToggle.addEventListener('change', () => {
     document.body.classList.toggle("dark");
+    deadCom.classList.toggle("dark");
 });
 
 /* Change destroy math btn text on click */
