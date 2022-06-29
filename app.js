@@ -136,6 +136,7 @@ const themeToggle = document.querySelector("#checkbox");
 const destroyMath = document.querySelector("#destroy-math-btn");
 const title = document.querySelector("#title");
 const calc = document.querySelector(".grid-container");
+const deadCom = document.querySelector("#after-destroy");
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -183,25 +184,35 @@ deleteButton.addEventListener('click', button => {
 
 themeToggle.addEventListener('change', () => {
     document.body.classList.toggle("dark");
-    
 });
 
+/* Change destroy math btn text on click */
 const change = () => {
     if (destroyMath.innerHTML === "Destroy Math"){
         destroyMath.innerHTML = "Ressurect Math";
     } else destroyMath.innerHTML = "Destroy Math";
 };
 
-//if (elem.value=="Close Curtain") elem.value = "Open Curtain";
-//else elem.value = "Close Curtain";
-
 destroyMath.addEventListener('click', () => {
+    /* Destroy */
     if(calc.classList.contains("animate__backInDown")){
-        calc.classList.remove("animate__backInDown")
-        calc.classList.add("animate__backOutDown")
+        calc.classList.remove("animate__backInDown");
+        calc.classList.add("animate__backOutDown");
+        setTimeout(() => {
+            deadCom.classList.remove("animate__flipOutY", "hidden");
+            deadCom.classList.add("after-destroy", "animate__flipInY");
+            calc.classList.add("hidden");
+        }, 700);  
+        
+        /* Resurrect */
     } else if(calc.classList.contains("animate__backOutDown")){
-        calc.classList.remove("animate__backOutDown")
-        calc.classList.add("animate__backInDown")
+        deadCom.classList.remove("animate__flipInY");
+        deadCom.classList.add("animate__flipOutY");
+        setTimeout(() => {
+            calc.classList.remove("animate__backOutDown", "hidden");
+            calc.classList.add("animate__backInDown");
+            deadCom.classList.add("hidden");
+        }, 700);
     };
     change();
 });
