@@ -16,7 +16,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: antiquewhite;
   height: 50vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
