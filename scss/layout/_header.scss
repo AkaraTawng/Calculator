@@ -61,6 +61,10 @@
     };
 
     .internal{
+        @include tablet {
+            display: none;
+        };
+        
         position: relative;
         padding-bottom: 0.5%;
         font-size: 1.2rem;

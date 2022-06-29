@@ -298,6 +298,12 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+  .nav-container .internal {
+    display: none;
+  }
+}
+
 .nav-container .internal::before {
   content: '';
   position: absolute;
