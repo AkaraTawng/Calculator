@@ -34,7 +34,20 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-flex-container" >
+
+        
+        <section id="buttons">
+            <div class="btn-flex-container animate__animated animate__flipInX" >
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon fa-2x"></i>
+                    <i class="fas fa-sun fa-2x"></i>
+                    <div class="ball"></div>
+                </label>
+                <button class="animate__animated animate__flipInX" id="destroy-math-btn">Destroy Math</button>
+            </div>
+        </section>
 
         <!-- dead computer image container -->
         <div class="hidden animate__animated" id="after-destroy"></div>
@@ -72,17 +85,7 @@
         </div>
     </main>
 
-    <section id="buttons">
-        <div class="btn-flex-container animate__animated animate__flipInX" >
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fas fa-moon fa-2x"></i>
-                <i class="fas fa-sun fa-2x"></i>
-                <div class="ball"></div>
-            </label>
-            <button class="animate__animated animate__flipInX" id="destroy-math-btn">Destroy Math</button>
-        </div>
-    </section>
+ 
 
     <!-- flex container -->
     <footer id="footer">
