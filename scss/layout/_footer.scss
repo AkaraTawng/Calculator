@@ -61,7 +61,19 @@
         @include tablet{
             display: none;
         };
+
+        &-two{
+            color: white;
+            font-family: $titleFont;
+            margin-top: 2rem;
+            display: none;
+            @include tablet{
+                display: flex;
+            };
+        };
     };
+
+   
 
     #fter-social-links{
         a{
