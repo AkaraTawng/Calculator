@@ -655,6 +655,16 @@ body {
   /* flex container for ul and h2 */
 }
 
+@media (max-width: 768px) {
+  #footer {
+    height: 40rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #footer #sitemap-container {
   display: -webkit-box;
   display: -ms-flexbox;

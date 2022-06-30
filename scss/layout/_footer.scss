@@ -8,7 +8,12 @@
     border-top: solid white 2px;
     display: flex;
     justify-content: space-around;
-margin-bottom: 0;
+    margin-bottom: 0;
+
+@include tablet{
+    height: 40rem;
+    flex-direction: column;
+}
     /* flex container for ul and h2 */
     #sitemap-container {
         // background-color: blue;
