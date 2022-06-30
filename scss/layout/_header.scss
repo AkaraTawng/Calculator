@@ -129,5 +129,77 @@
             };
         };
     };
+
+
+
+    @include tablet{
+        .menu-btn {
+            position: relative; /* offset relative to itself. remains in doc flow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            padding: 2px 20px !important;
+            &:hover{
+                background-color: white;
+            };
+
+            &:active{
+                background-color: rgb(207, 207, 207);
+                transition: all linear 0.1s ;
+            };
+            /* border: 3px solid #fff; */
+        }
+        
+        .menu-btn_burger {
+            width: 50px;
+            height: 6px;
+            background: rgb(0, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        };
+        
+        
+        .menu-btn_burger::before, .menu-btn_burger::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: rgb(0, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+           
+        }
+        
+        .menu-btn_burger::before{
+            transform: translate(-24px, -16px);
+        }
+        
+        .menu-btn_burger::after{
+            transform: translate(-26px, 16px);
+        }
+        
+        /* ANIMATION */
+        .menu-btn.open .menu-btn_burger /* targets middle line */{
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+        }
+        
+        .menu-btn.open .menu-btn_burger::before /* targets top line */{
+            transform: rotate(50deg) translate(7px, -9px) /* translate x, y */;
+        }
+        
+        .menu-btn.open .menu-btn_burger::after /* targets bottom line */{
+            transform: rotate(-50deg) translate(26px, 30px);
+        }          
+    };
 };
 

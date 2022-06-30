@@ -370,6 +370,87 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    /* ANIMATION */
+  }
+  .nav-container .menu-btn {
+    position: relative;
+    /* offset relative to itself. remains in doc flow */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    padding: 2px 20px !important;
+    /* border: 3px solid #fff; */
+  }
+  .nav-container .menu-btn:hover {
+    background-color: white;
+  }
+  .nav-container .menu-btn:active {
+    background-color: #cfcfcf;
+    -webkit-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+  }
+  .nav-container .menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .nav-container .menu-btn_burger::before, .nav-container .menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .nav-container .menu-btn_burger::before {
+    -webkit-transform: translate(-24px, -16px);
+            transform: translate(-24px, -16px);
+  }
+  .nav-container .menu-btn_burger::after {
+    -webkit-transform: translate(-26px, 16px);
+            transform: translate(-26px, 16px);
+  }
+  .nav-container .menu-btn.open .menu-btn_burger {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .nav-container .menu-btn.open .menu-btn_burger::before {
+    -webkit-transform: rotate(50deg) translate(7px, -9px);
+            transform: rotate(50deg) translate(7px, -9px);
+  }
+  .nav-container .menu-btn.open .menu-btn_burger::after {
+    -webkit-transform: rotate(-50deg) translate(26px, 30px);
+            transform: rotate(-50deg) translate(26px, 30px);
+  }
+}
+
 #output {
   background-color: #343a40;
   -ms-grid-row: 1;
