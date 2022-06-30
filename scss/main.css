@@ -666,7 +666,6 @@ body {
 }
 
 #footer #sitemap-container {
-  background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,6 +680,14 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   font-family: "Cairo", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #footer #sitemap-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 #footer #sitemap-container h2 {
@@ -702,7 +709,6 @@ body {
 }
 
 #footer #sitemap-container ul {
-  background-color: darkgoldenrod;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,6 +718,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 50%;
+}
+
+@media (max-width: 768px) {
+  #footer #sitemap-container ul {
+    margin-right: 6%;
+  }
 }
 
 #footer #sitemap-container ul li {
