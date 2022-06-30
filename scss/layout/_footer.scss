@@ -58,6 +58,9 @@
         color: white;
         font-family: $titleFont;
         margin-top: 2rem;
+        @include tablet{
+            display: none;
+        };
     };
 
     #fter-social-links{
