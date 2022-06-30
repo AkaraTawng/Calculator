@@ -394,7 +394,6 @@
     margin-right: 2rem;
     margin-top: 1rem;
     padding: 2px 20px !important;
-    /* border: 3px solid #fff; */
   }
   .nav-container .menu-btn:hover {
     background-color: white;
@@ -595,6 +594,24 @@ body.dark .nav-container .social .social-link :active {
 body.dark .nav-container .social .social-link :visited {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  body.dark .menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  body.dark .menu-btn:active {
+    background-color: rgba(207, 207, 207, 0.8);
+    -webkit-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+  }
+  body.dark .menu-btn_burger {
+    background: white;
+  }
+}
+
+body.dark .menu-btn_burger::before, body.dark .menu-btn_burger::after {
+  background: white;
 }
 
 body {

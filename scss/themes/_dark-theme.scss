@@ -62,5 +62,25 @@ body{
                 };
             };
         };
+        @include tablet{
+            .menu-btn {
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.4);
+                };
+    
+                &:active{
+                    background-color: rgba(207, 207, 207, 0.8);
+                    transition: all linear 0.1s ;
+                };
+            };
+            
+            .menu-btn_burger {
+                background: rgb(255, 255, 255);
+                };
+            };
+            
+            .menu-btn_burger::before, .menu-btn_burger::after{
+                background: rgb(255, 255, 255);
+            };  
+        };
     };
-};
