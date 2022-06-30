@@ -16,7 +16,7 @@
 }
     /* flex container for ul and h2 */
     #sitemap-container {
-        // background-color: blue;
+        background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -42,7 +42,7 @@
         };
 
         ul{
-            // background-color: darkgoldenrod;
+            background-color: darkgoldenrod;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -73,8 +73,6 @@
         };
     };
 
-   
-
     #fter-social-links{
         a{
             text-decoration: none;
@@ -100,12 +98,16 @@
         flex-direction: column;
         justify-content: flex-end;
         height: 10rem;
+        @include tablet{
+            justify-content: center;
+            margin-left: 10%;
+        };
     };
 
     #contact-section{
         display: flex;
         flex-direction: column;
-        // background-color: coral;
+        background-color: coral;
         align-items: flex-start;
         justify-content: space-evenly;
 
@@ -119,7 +121,7 @@
         .contact{
             display: flex;
             flex-direction: column;
-            // background-color: crimson;
+            background-color: crimson;
             margin-left: -12%;
             height: 4rem;
             justify-content: space-between;
