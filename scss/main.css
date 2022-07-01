@@ -536,6 +536,10 @@
           transform: translateX(48px);
 }
 
+body #after-destroy {
+  z-index: -1;
+}
+
 body.dark {
   background-image: url(/img/nMqfUc.webp);
   background-size: cover;
@@ -902,12 +906,12 @@ body {
   margin: 0;
 }
 
-#table-hamburger-slide-menu {
+body #table-hamburger-slide-menu {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 
-#table-hamburger-slide-menu ul {
+body #table-hamburger-slide-menu ul {
   display: inline-block;
   list-style-type: none;
   margin: 16.5rem -35rem 0 0;
@@ -917,26 +921,26 @@ body {
           padding-inline-start: 0;
 }
 
-#table-hamburger-slide-menu ul li {
+body #table-hamburger-slide-menu ul li {
   padding: 10% 0 10% 0;
   width: 100%;
 }
 
-#table-hamburger-slide-menu ul li:hover {
+body #table-hamburger-slide-menu ul li:hover {
   background-color: white;
 }
 
-#table-hamburger-slide-menu ul a {
+body #table-hamburger-slide-menu ul a {
   color: black;
   text-decoration: none;
   position: relative;
 }
 
-#table-hamburger-slide-menu ul a:active {
+body #table-hamburger-slide-menu ul a:active {
   text-decoration: underline;
 }
 
-.slide-in {
+body .slide-in {
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
   -webkit-transition: -webkit-transform linear 0.5s;
@@ -945,12 +949,30 @@ body {
   transition: transform linear 0.5s, -webkit-transform linear 0.5s;
 }
 
-.slide-out {
+body .slide-out {
   -webkit-transform: translateX(50rem);
           transform: translateX(50rem);
   -webkit-transition: -webkit-transform linear 0.5s;
   transition: -webkit-transform linear 0.5s;
   transition: transform linear 0.5s;
   transition: transform linear 0.5s, -webkit-transform linear 0.5s;
+}
+
+@media (max-width: 768px) {
+  body .menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  body .menu-btn:active {
+    background-color: rgba(207, 207, 207, 0.8);
+    -webkit-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+  }
+  body .menu-btn_burger {
+    background: white;
+  }
+}
+
+body .menu-btn_burger::before, body .menu-btn_burger::after {
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */
