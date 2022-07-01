@@ -1,0 +1,27 @@
+#table-hamburger-slide-menu {
+    background-color: wheat;
+    position: absolute;//remove from document flow
+    z-index: 1;
+    
+
+
+    ul{
+        display: inline-block;
+        list-style-type: none;
+        margin: 16.5rem -35rem 0 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 10rem;      
+        
+        li {
+            padding: 10% 0 10% 0;
+        }
+        
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            position: relative;
+
+            
+        };
+    };
+};

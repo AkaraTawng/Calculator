@@ -900,4 +900,28 @@ body {
 * {
   margin: 0;
 }
+
+#table-hamburger-slide-menu {
+  background-color: wheat;
+  position: absolute;
+  z-index: 1;
+}
+
+#table-hamburger-slide-menu ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 16.5rem -35rem 0 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 10rem;
+}
+
+#table-hamburger-slide-menu ul li {
+  padding: 10% 0 10% 0;
+}
+
+#table-hamburger-slide-menu ul a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
 /*# sourceMappingURL=main.css.map */
