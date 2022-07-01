@@ -14,7 +14,8 @@
         "themes/_light-theme.scss",
         "components/_destroy-math-button.scss",
         "layout/_footer.scss",
-        "base/_reset.scss"
+        "base/_reset.scss",
+        "components/__hamburger-menu.scss"
     ],
     "names": [],
     "file": "main.css"
