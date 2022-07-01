@@ -837,6 +837,14 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
+@media (max-width: 768px) {
+  #footer #contact-section h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 #footer #contact-section .contact {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -124,6 +124,9 @@
             color: white;
             align-self: flex-start;
             font-family: $titleFont;
+            @include tablet{
+                align-self: center;
+            };
         };
 
         /* ul */
