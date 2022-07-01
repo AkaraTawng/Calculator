@@ -822,6 +822,14 @@ body {
   /* ul */
 }
 
+@media (max-width: 768px) {
+  #footer #contact-section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #footer #contact-section h2 {
   color: white;
   -ms-flex-item-align: start;

@@ -116,6 +116,9 @@
         background-color: coral;
         align-items: flex-start;
         justify-content: space-evenly;
+        @include tablet{
+            align-items: center;
+        };
 
         h2{
             color: white;
