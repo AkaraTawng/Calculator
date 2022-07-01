@@ -1,4 +1,9 @@
 body{
+
+        #after-destroy{
+            z-index: -1;
+        };
+
         &.dark {
         background-image: url(/img/nMqfUc.webp);
         background-size: cover;
