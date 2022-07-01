@@ -812,7 +812,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: coral;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -853,7 +852,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: crimson;
   margin-left: -12%;
   height: 4rem;
   -webkit-box-pack: justify;
@@ -864,6 +862,12 @@ body {
           align-items: flex-start;
   list-style-type: none;
   color: white;
+}
+
+@media (max-width: 768px) {
+  #footer #contact-section .contact {
+    margin-left: 10%;
+  }
 }
 
 #footer #contact-section .contact a {
