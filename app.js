@@ -137,6 +137,8 @@ const destroyMath = document.querySelector("#destroy-math-btn");
 const title = document.querySelector("#title");
 const calc = document.querySelector(".grid-container");
 const deadCom = document.querySelector("#after-destroy");
+const menuBtn = document.querySelector(".menu-btn");
+const hamburgerSlider = document.querySelector("#table-hamburger-slide-menu");
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -226,8 +228,6 @@ $(document).ready(function(){
 
 //hamburger
 
-const menuBtn = document.querySelector(".menu-btn");
-
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
@@ -239,3 +239,13 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+menuBtn.addEventListener('click', () => {
+    if(hamburgerSlider.classList.contains("slide-in")){
+        hamburgerSlider.classList.remove("slide-in");
+        hamburgerSlider.classList.add("slide-out");
+    } else if (hamburgerSlider.classList.contains("slide-out")){
+        hamburgerSlider.classList.remove("slide-out");
+        hamburgerSlider.classList.add("slide-in");
+    }
+    // hamburgerSlider.classList.toggle("slide-in");
+});
