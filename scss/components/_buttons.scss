@@ -43,6 +43,10 @@
     background-size: cover;
     width: 28rem;
     margin: 4.9rem auto 4rem auto;
+    @include  mobile {
+        height: 19rem;
+        width: 19rem;
+    };
 
     &.dark{
         background-image: url(../../img/deadComWhite.png);
@@ -55,7 +59,8 @@
     margin-bottom: 3rem;
     width: 60%;
     @include mobile {
-        width: 87%;
+        width: 86%;
+        margin-right: 2.5%;
     };
     height: 29rem;
     border: solid rgb(199, 199, 199) 15px;

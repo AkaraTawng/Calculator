@@ -75,6 +75,13 @@
   margin: 4.9rem auto 4rem auto;
 }
 
+@media (max-width: 360px) {
+  .after-destroy {
+    height: 19rem;
+    width: 19rem;
+  }
+}
+
 .after-destroy.dark {
   background-image: url(../../img/deadComWhite.png);
 }
@@ -98,7 +105,8 @@
 
 @media (max-width: 360px) {
   .grid-container {
-    width: 87%;
+    width: 86%;
+    margin-right: 2.5%;
   }
 }
 
