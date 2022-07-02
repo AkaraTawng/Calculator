@@ -50,17 +50,17 @@ body{
                     cursor: crosshair;
                     color: rgba(255, 255, 255, 0.5);
                     
-                    :hover{
+                    &:hover{
                         cursor: crosshair;
                         transform: rotate(10deg) scale(1.1);
                         color: rgb(255, 255, 255); 
                     };
                 
-                    :active {
+                    &:active {
                         color: rgb(177, 211, 255)
                     };
                 
-                    :visited{
+                    &:visited{
                         text-decoration: none;
                         color: rgba(255, 255, 255, 0.5);
                     };

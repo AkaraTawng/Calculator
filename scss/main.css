@@ -585,18 +585,18 @@ body.dark .nav-container .social .social-link {
   color: rgba(255, 255, 255, 0.5);
 }
 
-body.dark .nav-container .social .social-link :hover {
+body.dark .nav-container .social .social-link:hover {
   cursor: crosshair;
   -webkit-transform: rotate(10deg) scale(1.1);
           transform: rotate(10deg) scale(1.1);
   color: white;
 }
 
-body.dark .nav-container .social .social-link :active {
+body.dark .nav-container .social .social-link:active {
   color: #b1d3ff;
 }
 
-body.dark .nav-container .social .social-link :visited {
+body.dark .nav-container .social .social-link:visited {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -944,6 +944,7 @@ body #table-hamburger-slide-menu ul a {
 
 body #table-hamburger-slide-menu ul a:active {
   text-decoration: underline;
+  color: #b1d3ff;
 }
 
 body .slide-in {
