@@ -632,6 +632,7 @@ body {
   border-radius: 50px;
   border: solid #74b3ff 1px;
   font-family: "Cairo", sans-serif;
+  width: 7rem;
 }
 
 #destroy-math-btn:hover {
