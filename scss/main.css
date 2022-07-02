@@ -1,3 +1,4 @@
+/* hide sliding menu if open and screen is >= 768, display again when < 768 */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
 #buttons {
   display: -webkit-box;
@@ -46,6 +47,13 @@
   background-size: cover;
   width: 28rem;
   margin: 4.9rem auto 4rem auto;
+}
+
+@media (max-width: 768px) {
+  .after-destroy {
+    height: 23rem;
+    width: 23rem;
+  }
 }
 
 .after-destroy.dark {
