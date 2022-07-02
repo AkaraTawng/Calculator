@@ -913,11 +913,11 @@ body #table-hamburger-slide-menu {
 body #table-hamburger-slide-menu ul {
   display: inline-block;
   list-style-type: none;
-  margin: 16.5rem -35rem 0 0;
   background-color: rgba(255, 255, 255, 0.7);
-  width: 10rem;
+  width: 12rem;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  text-align: center;
 }
 
 body #table-hamburger-slide-menu ul li {
@@ -940,8 +940,6 @@ body #table-hamburger-slide-menu ul a:active {
 }
 
 body .slide-in {
-  -webkit-transform: translateX(1.5rem);
-          transform: translateX(1.5rem);
   -webkit-transition: -webkit-transform linear 0.5s;
   transition: -webkit-transform linear 0.5s;
   transition: transform linear 0.5s;
@@ -949,8 +947,8 @@ body .slide-in {
 }
 
 body .slide-out {
-  -webkit-transform: translateX(50rem);
-          transform: translateX(50rem);
+  -webkit-transform: translateX(-50rem);
+          transform: translateX(-50rem);
   -webkit-transition: -webkit-transform linear 0.5s;
   transition: -webkit-transform linear 0.5s;
   transition: transform linear 0.5s;

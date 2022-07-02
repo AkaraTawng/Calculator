@@ -139,6 +139,7 @@ const calc = document.querySelector(".grid-container");
 const deadCom = document.querySelector("#after-destroy");
 const menuBtn = document.querySelector(".menu-btn");
 const hamburgerSlider = document.querySelector("#table-hamburger-slide-menu");
+let menuOpen = false;
 
 /* new instance of calculator */
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
@@ -228,7 +229,6 @@ $(document).ready(function(){
 
 //hamburger
 
-let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
@@ -236,9 +236,10 @@ menuBtn.addEventListener('click', () => {
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false; 
-    }
+    };
 });
 
+//hamburger sliding menu class manipulator
 menuBtn.addEventListener('click', () => {
     if(hamburgerSlider.classList.contains("slide-in")){
         hamburgerSlider.classList.remove("slide-in");
@@ -246,6 +247,6 @@ menuBtn.addEventListener('click', () => {
     } else if (hamburgerSlider.classList.contains("slide-out")){
         hamburgerSlider.classList.remove("slide-out");
         hamburgerSlider.classList.add("slide-in");
-    }
+    };
     // hamburgerSlider.classList.toggle("slide-in");
 });

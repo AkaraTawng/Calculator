@@ -7,11 +7,10 @@ body {
     ul{
         display: inline-block;
         list-style-type: none;
-        margin: 16.5rem -35rem 0 0;
         background-color: rgba(255, 255, 255, 0.7);
-        width: 10rem;  
+        width: 12rem;  
         padding-inline-start: 0;
-        
+       text-align: center;
         
         li {
             padding: 10% 0 10% 0;
@@ -19,7 +18,7 @@ body {
             &:hover{
                 background-color:rgb(255, 255, 255);
             };
-        }
+        };
         
         a {
             color: rgb(0, 0, 0);
@@ -28,24 +27,24 @@ body {
 
             &:active{
                 text-decoration: underline;
-            }
+            };
         };
     };
 
 };
 
     .slide-in{
-        transform: translateX(1.5rem);
         transition: transform linear 0.5s;
     };
 
     .slide-out{
-        transform: translateX(50rem);
+        transform: translateX(-50rem);
         transition: transform linear 0.5s;
     };
     
     @include tablet{
         .menu-btn {
+            // background-color: aquamarine;
             &:hover{
                 background-color: rgba(255, 255, 255, 0.4);
             };
