@@ -9,11 +9,17 @@
 .btn-flex-container{
     display: flex;
     flex-direction: column;
-    // background-color: antiquewhite;
-    // border: solid black 1px;
     height: 50vh;
     justify-content: space-around;
     margin-left: 3rem; 
+    @include mobile {
+        width: 23rem;
+        margin-right: 2.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 8rem;
+        align-items: center;
+    };
 };
 
 #main-flex-container{
@@ -75,7 +81,7 @@
         
         &:hover {
             cursor: pointer;
-            background-color: $numberBtnGrey; //make variable
+            background-color: $numberBtnGrey; 
         };
 
         &:active{
@@ -83,7 +89,7 @@
         };
 
         &.green-hover:hover {
-            background-color: $operatorBtnGreen; //make variable
+            background-color: $operatorBtnGreen; 
 
             &:active{
                 background-color: darken($operatorBtnGreen, 10%);
@@ -91,7 +97,7 @@
         };
 
         &.red-hover:hover { 
-            background-color: $clearButtonRed ; //make variable
+            background-color: $clearButtonRed ; 
 
             &:active{
                 background-color: darken($clearButtonRed, 10%);
@@ -104,13 +110,11 @@
     };
 
     #clear {
-        // background-color: #a0c4ff;
         grid-area: ac;
     };
 
     #divide {
         grid-area: di;
-    
     };
     
     #multiply {

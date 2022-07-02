@@ -23,6 +23,23 @@
   margin-left: 3rem;
 }
 
+@media (max-width: 360px) {
+  .btn-flex-container {
+    width: 23rem;
+    margin-right: 2.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 8rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #main-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,11 +667,12 @@ body {
 #destroy-math-btn {
   background-color: rgba(3, 83, 164, 0.4);
   color: rgba(255, 255, 255, 0.6);
-  padding: 12px 3px 12px 3px;
+  padding: 8px 3px 8px 3px;
   border-radius: 50px;
   border: solid #74b3ff 1px;
   font-family: "Cairo", sans-serif;
   width: 7rem;
+  height: 3rem;
 }
 
 #destroy-math-btn:hover {
