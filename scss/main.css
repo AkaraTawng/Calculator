@@ -79,6 +79,12 @@
   z-index: -1;
 }
 
+@media (max-width: 360px) {
+  .grid-container {
+    width: 87%;
+  }
+}
+
 .grid-container .btn {
   border: none;
   font-size: 1.7rem;

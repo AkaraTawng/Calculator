@@ -23,7 +23,6 @@
 
     @include mobile {
         flex-direction: column-reverse;
-
     };
 };
 
@@ -49,6 +48,9 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 60%;
+    @include mobile {
+        width: 87%;
+    };
     height: 29rem;
     border: solid rgb(199, 199, 199) 15px;
     background-color: rgb(199, 199, 199);
