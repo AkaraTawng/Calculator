@@ -387,6 +387,12 @@
   color: black;
 }
 
+@media (max-width: 360px) {
+  .nav-container .menu-btn {
+    margin-left: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-container {
     /* ANIMATION */

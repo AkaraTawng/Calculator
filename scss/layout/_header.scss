@@ -130,7 +130,11 @@
         };
     };
 
-
+    @include mobile {
+        .menu-btn{
+            margin-left: 4rem;
+        };
+    };
 
     @include tablet{
         .menu-btn {
