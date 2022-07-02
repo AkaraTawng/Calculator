@@ -1,6 +1,7 @@
 $breakpoints: (
     "mobile": 360px, 
     "tablet": 768px, 
+    "tablet-min-width": 768px, 
     "desktop": 1366px, 
     "hi-res": 1920px,
 );
@@ -13,6 +14,13 @@ $breakpoints: (
 
 @mixin tablet {
     @media (max-width: map-get($breakpoints, "tablet")){
+        @content;
+    };
+};
+
+/* hide sliding menu if open and screen is >= 768, display again when < 768 */
+@mixin tablet-min-width {
+    @media(min-width: map-get($breakpoints, "tablet-min-width")){
         @content;
     };
 };
