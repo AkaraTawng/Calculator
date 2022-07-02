@@ -3,6 +3,10 @@ body {
     // background-color: wheat;
     position: absolute;//remove from document flow
     z-index: 3;
+
+    @include tablet-min-width {
+        display: none;
+    };
     
     ul{
         display: inline-block;

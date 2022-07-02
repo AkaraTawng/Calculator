@@ -217,6 +217,7 @@
   grid-area: eq;
 }
 
+/* hide sliding menu if open and screen is >= 768, display again when < 768 */
 .nav-container {
   border-bottom: solid 2px black;
   list-style-type: none;
@@ -908,6 +909,12 @@ body {
 body #table-hamburger-slide-menu {
   position: absolute;
   z-index: 3;
+}
+
+@media (min-width: 768px) {
+  body #table-hamburger-slide-menu {
+    display: none;
+  }
 }
 
 body #table-hamburger-slide-menu ul {
