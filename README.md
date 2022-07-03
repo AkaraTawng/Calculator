@@ -24,7 +24,7 @@
 ## Fully responsive
 - ![gif](img/responsive.gif)
 ## Laser underline animation
-- ![gif](img/laser-hover-animation.gif)
+-![gif](img/laser-hover-animation.gif)
 
 ## Entrance and exit animations
 -![gif](img/en-ex-animations.gif)
