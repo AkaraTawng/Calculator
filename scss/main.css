@@ -100,7 +100,6 @@
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "ou ou ou ou" "ac del di mu"  " se ei ni mi" " fo fi si pl" "on tw th eq" "ze ze de eq";
-  z-index: -1;
 }
 
 @media (max-width: 460px) {
