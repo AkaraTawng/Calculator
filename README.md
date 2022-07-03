@@ -24,6 +24,8 @@
 
 ## Entrance and exit animations
 
+## Animated hamburger menu with slide-in nav menu
+
 ---
 
 # What I learned? 👨‍💻
