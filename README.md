@@ -23,14 +23,15 @@
 
 ## Fully responsive
 - ![gif](img/responsive.gif)
+
 ## Laser underline animation
--![gif](img/laser-hover-animation.gif)
+- ![gif](img/laser-hover-animation-light-theme.gif)
 
 ## Entrance and exit animations
 -![gif](img/en-ex-animations.gif)
 
 ## Animated hamburger menu with slide-in nav menu
--![gif](img/hamburgr.gif)
+- ![gif](img/hamburger.gif)
 
 ---
 
