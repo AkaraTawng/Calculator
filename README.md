@@ -13,18 +13,22 @@
 # Features ⚙
 
 ## Full calculator functionality
+- ![gif](img/fully-functional.gif)
 
 ## Dark / light theme toggle
 
 ## Destroy math toggle
+- ![gif](img/destroy-math.gif)
 
 ## Fully responsive
-
+- ![gif](img/responsive.gif)
 ## Laser underline animation
 
 ## Entrance and exit animations
+-![gif](img/en-ex-animations.gif)
 
 ## Animated hamburger menu with slide-in nav menu
+-![gif](img/hamburgr.gif)
 
 ---
 
