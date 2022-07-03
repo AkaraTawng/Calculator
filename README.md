@@ -11,11 +11,18 @@
 ---
 
 # Features ⚙
+
+## Full calculator functionality
+
 ## Dark / light theme toggle
 
-## All basic calclator functionalites
+## Destroy math toggle
 
-## Hover animations 
+## Fully responsive
+
+## Laser underline animation
+
+## Entrance and exit animations
 
 ---
 
@@ -23,3 +30,6 @@
 
 - SCSS 7-1 file structure
 - How to add animations using Animate.css
+- How to add media queries in SCSS
+- How to track a project from start to finish with Git and Github
+- Github workflow 
