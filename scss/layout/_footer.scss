@@ -1,6 +1,5 @@
 /* outermost flex container */
 #footer{
-    // background-color: greenyellow !important;
     height: 11rem;
     background-color: rgba($color: #000000, $alpha: 0.7);
     width: 100%;
@@ -10,13 +9,11 @@
     justify-content: space-around;
     margin-bottom: 0;
 
-@include tablet{
-    height: 40rem;
-    flex-direction: column;
-}
-    /* flex container for ul and h2 */
+    @include tablet{
+        height: 40rem;
+        flex-direction: column;
+    };
     #sitemap-container {
-        // background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -45,7 +42,6 @@
         };
 
         ul{
-            // background-color: darkgoldenrod;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -100,7 +96,6 @@
     };
 
     #copyright-and-social-flex-container{
-        // background-color: magenta;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -114,7 +109,6 @@
     #contact-section{
         display: flex;
         flex-direction: column;
-        // background-color: coral;
         align-items: flex-start;
         justify-content: space-evenly;
         @include tablet{
@@ -134,7 +128,6 @@
         .contact{
             display: flex;
             flex-direction: column;
-            // background-color: crimson;
             margin-left: -12%;
             height: 4rem;
             justify-content: space-between;

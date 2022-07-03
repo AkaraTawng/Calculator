@@ -706,7 +706,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 0;
-  /* flex container for ul and h2 */
 }
 
 @media (max-width: 768px) {
