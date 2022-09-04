@@ -1,5 +1,5 @@
 # Why? 🤔
-- This a portfolio practice project. I wanted to develop my skills in the areas of SCSS 7-1 file structure, JavaScript, semantic HTML5 content structure. 
+- This a portfolio project. I wanted to develop my skills in the areas of SCSS 7-1 file structure, JavaScript, semantic HTML5 content structure. 
 
 ---
 
