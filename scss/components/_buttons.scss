@@ -37,7 +37,7 @@
 };
 
 .after-destroy{
-    background-image: url(/Calculator/img/deadcom.png);
+    background-image: url(../../img/deadcom.png);
     height: 28rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +49,7 @@
     };
 
     &.dark{
-        background-image: url(/Calculator/img/deadComWhite.png);
+        background-image: url(../../img/deadComWhite.png);
     };
 };
 
