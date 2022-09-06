@@ -400,7 +400,7 @@ body #after-destroy {
   z-index: -1;
 }
 body.dark {
-  background-image: url(/Calculator/img/nMqfUc.webp);
+  background-image: url(../../img/istockphoto-1194363251-612x612.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -461,7 +461,7 @@ body.dark .menu-btn_burger::before, body.dark .menu-btn_burger::after {
 }
 
 body {
-  background-image: url(/Calculator/img/1201167.webp);
+  background-image: url(../../img/1201167.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
